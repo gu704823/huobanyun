@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "创建于"; ObjectID = "07Z-iw-8N1"; */
+"07Z-iw-8N1.text" = "创建于";
+
+/* Class = "UILabel"; text = "优先级"; ObjectID = "4et-RO-I5S"; */
+"4et-RO-I5S.text" = "优先级";
+
+/* Class = "UILabel"; text = "壮志"; ObjectID = "5i6-ca-jfP"; */
+"5i6-ca-jfP.text" = "壮志";
+
+/* Class = "UILabel"; text = "swift"; ObjectID = "6AH-DE-E1X"; */
+"6AH-DE-E1X.text" = "swift";
+
+/* Class = "UILabel"; text = "支行名称"; ObjectID = "8Xx-6w-mhl"; */
+"8Xx-6w-mhl.text" = "支行名称";
+
+/* Class = "UILabel"; text = "创建时间"; ObjectID = "9gd-Em-YsB"; */
+"9gd-Em-YsB.text" = "创建时间";
+
+/* Class = "UILabel"; text = "swift"; ObjectID = "BMX-uv-5wt"; */
+"BMX-uv-5wt.text" = "swift";
+
+/* Class = "UILabel"; text = "全部"; ObjectID = "Cr4-Xb-Ruq"; */
+"Cr4-Xb-Ruq.text" = "全部";
+
+/* Class = "UILabel"; text = "swift,jason"; ObjectID = "Gxo-7S-Rzf"; */
+"Gxo-7S-Rzf.text" = "swift,jason";
+
+/* Class = "UILabel"; text = "5.右键（或ctrl+左键）从 Container View 拖一条线到 TableViewController，然后在弹出的菜单中选择 Embed。"; ObjectID = "Mqf-iG-asw"; */
+"Mqf-iG-asw.text" = "5.右键（或ctrl+左键）从 Container View 拖一条线到 TableViewController，然后在弹出的菜单中选择 Embed。";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NTw-HB-LWG"; */
+"NTw-HB-LWG.text" = "Label";
+
+/* Class = "UILabel"; text = "状态"; ObjectID = "Nwi-dZ-XRH"; */
+"Nwi-dZ-XRH.text" = "状态";
+
+/* Class = "UILabel"; text = "壮志"; ObjectID = "Oa8-Ae-lZa"; */
+"Oa8-Ae-lZa.text" = "壮志";
+
+/* Class = "UILabel"; text = "中"; ObjectID = "Qyv-oa-VwU"; */
+"Qyv-oa-VwU.text" = "中";
+
+/* Class = "UILabel"; text = "壮志"; ObjectID = "S0A-ia-5zc"; */
+"S0A-ia-5zc.text" = "壮志";
+
+/* Class = "UINavigationItem"; title = "壮志"; ObjectID = "TEQ-mn-ir7"; */
+"TEQ-mn-ir7.title" = "壮志";
+
+/* Class = "UILabel"; text = "已完成"; ObjectID = "UVZ-rP-swW"; */
+"UVZ-rP-swW.text" = "已完成";
+
+/* Class = "UILabel"; text = "一台柜员打印存单小写金额出错,..."; ObjectID = "XhF-6N-naf"; */
+"XhF-6N-naf.text" = "一台柜员打印存单小写金额出错,...";
+
+/* Class = "UILabel"; text = "3268条"; ObjectID = "XwH-Hf-m2h"; */
+"XwH-Hf-m2h.text" = "3268条";
+
+/* Class = "UINavigationItem"; title = "海安"; ObjectID = "Zl9-Yp-6gI"; */
+"Zl9-Yp-6gI.title" = "海安";
+
+/* Class = "UILabel"; text = "中"; ObjectID = "Zvz-3b-d2u"; */
+"Zvz-3b-d2u.text" = "中";
+
+/* Class = "UILabel"; text = "执行人"; ObjectID = "atZ-vL-hah"; */
+"atZ-vL-hah.text" = "执行人";
+
+/* Class = "UILabel"; text = "任务描述"; ObjectID = "btH-60-KpG"; */
+"btH-60-KpG.text" = "任务描述";
+
+/* Class = "UILabel"; text = "执行人"; ObjectID = "h8I-5O-9Xm"; */
+"h8I-5O-9Xm.text" = "执行人";
+
+/* Class = "UILabel"; text = "2017-06-16"; ObjectID = "ll0-vy-EwD"; */
+"ll0-vy-EwD.text" = "2017-06-16";
+
+/* Class = "UILabel"; text = "06月16日 14:35"; ObjectID = "mVj-EC-DDK"; */
+"mVj-EC-DDK.text" = "06月16日 14:35";
+
+/* Class = "UILabel"; text = "完成时间"; ObjectID = "n40-md-fav"; */
+"n40-md-fav.text" = "完成时间";
+
+/* Class = "UILabel"; text = "未开始"; ObjectID = "opI-H0-MIt"; */
+"opI-H0-MIt.text" = "未开始";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "ovG-CB-9Fg"; */
+"ovG-CB-9Fg.text" = "10";
+
+/* Class = "UILabel"; text = "2017-06-16 16:04"; ObjectID = "wNu-15-CFb"; */
+"wNu-15-CFb.text" = "2017-06-16 16:04";
