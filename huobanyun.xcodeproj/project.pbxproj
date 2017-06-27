@@ -25,7 +25,6 @@
 		BB4FAA3E1F0250E600C240FC /* timg.gif in Resources */ = {isa = PBXBuildFile; fileRef = BB4FAA3D1F0250E600C240FC /* timg.gif */; };
 		BB4FAA421F0252A100C240FC /* timg1.gif in Resources */ = {isa = PBXBuildFile; fileRef = BB4FAA411F0252A100C240FC /* timg1.gif */; };
 		BB8540011EEFEC7500E71C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8540001EEFEC7500E71C7E /* AppDelegate.swift */; };
-		BB8540031EEFEC7500E71C7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8540021EEFEC7500E71C7E /* ViewController.swift */; };
 		BB8540061EEFEC7500E71C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8540041EEFEC7500E71C7E /* Main.storyboard */; };
 		BB8540081EEFEC7500E71C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8540071EEFEC7500E71C7E /* Assets.xcassets */; };
 		BB85400B1EEFEC7500E71C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8540091EEFEC7500E71C7E /* LaunchScreen.storyboard */; };
@@ -106,7 +105,6 @@
 		BB4FAA411F0252A100C240FC /* timg1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = timg1.gif; sourceTree = "<group>"; };
 		BB853FFD1EEFEC7500E71C7E /* huobanyun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huobanyun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8540001EEFEC7500E71C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB8540021EEFEC7500E71C7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB8540051EEFEC7500E71C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB8540071EEFEC7500E71C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB85400A1EEFEC7500E71C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -294,7 +292,6 @@
 				BB4B3A6C1EF6324800D828FD /* 添加任务 */,
 				BB4B3A631EF5F1DF00D828FD /* 工具 */,
 				BB8540001EEFEC7500E71C7E /* AppDelegate.swift */,
-				BB8540021EEFEC7500E71C7E /* ViewController.swift */,
 				BB8540041EEFEC7500E71C7E /* Main.storyboard */,
 				BB4B3A691EF6291A00D828FD /* 详情列表页 */,
 				BB4B3A681EF6123C00D828FD /* 首页 */,
@@ -598,7 +595,6 @@
 				BB8FE4561EFA0DCA00850510 /* UnwindSegue.swift in Sources */,
 				BB8FE4531EFA0DCA00850510 /* SpringView.swift in Sources */,
 				BB8FE4501EFA0DCA00850510 /* SpringLabel.swift in Sources */,
-				BB8540031EEFEC7500E71C7E /* ViewController.swift in Sources */,
 				BB8FE4471EFA0DCA00850510 /* KeyboardLayoutConstraint.swift in Sources */,
 				BB8FE43A1EFA0DCA00850510 /* AsyncButton.swift in Sources */,
 				4319D66C1F00674800B96D2E /* loginViewController.swift in Sources */,

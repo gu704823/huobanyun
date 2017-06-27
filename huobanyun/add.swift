@@ -20,7 +20,7 @@ import LeanCloud
 //}
 struct addandquery {
     //添加任务
-    static func addtarget(classname:String,person:[String],taskdescription:String,taskname:String,finshtime:Date,priority:String,state:String){
+    static func addtarget(classname:String,person:[String],taskdescription:String,taskname:String,finshtime:Date,priority:String,state:String,creatpeople:String){
         let lcdate = LCDate(finshtime)
         let todo = LCObject(className: classname)
         todo.set("person", value: person)
@@ -29,10 +29,8 @@ struct addandquery {
         todo.set("state", value: state)
         todo.set("taskname", value: taskname)
         todo.set("finshtime", value: lcdate)
-       
-        
-       // todo.set("user", value: <#T##LCValueConvertible?#>)
-      //  todo.set("zhihang", value: <#T##LCValueConvertible?#>)
+        todo.set("user", value: creatpeople)
+        //  todo.set("zhihang", value: <#T##LCValueConvertible?#>)
         todo.save()
     }
     //查询任务

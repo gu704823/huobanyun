@@ -32,9 +32,12 @@ class listCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         refershdata()
         
-      //  let date = Date()
+        let date = Date()
       // addandquery.addtarget(classname: "addtask", person: ["swift","jason"], taskdescription: "壮志", taskname: "又有一台打印机坏了", finshtime: date, priority: priority.中.rawValue, state: state.未开始.rawValue)
-      
+      let userdefaults = UserDefaults.standard
+     let name = userdefaults.object(forKey: "name")
+//        print(name)
+        addandquery.addtarget(classname: "addtask", person: ["swift","jason"], taskdescription: "壮志", taskname: "又有一台打印机坏了", finshtime: date, priority: priority.中.rawValue, state: state.未开始.rawValue, creatpeople: name as! String)
         
         
         
