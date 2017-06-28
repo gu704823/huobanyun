@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+//动态图片
 class giftview: UIView {
      //定义
     let Screen_width = UIScreen.main.bounds.size.width

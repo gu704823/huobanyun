@@ -6,5 +6,6 @@ target 'huobanyun' do
   use_frameworks!
 
   pod 'LeanCloud', '~> 10.0.1'
+  pod 'WZLBadge'
 
 end

@@ -21,6 +21,7 @@ class completionTableViewController: UITableViewController {
 var stateview:alertview?
 var sheetview:alertsheet?
 var finshview:finshtime?
+var zhihangview:pickerview?
 
 
     override func viewDidLoad() {
@@ -34,6 +35,9 @@ var finshview:finshtime?
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
+        case 0:
+            zhihangview = pickerview(title: "ceshi", canclebtntitle: "ceshi")
+            zhihangview?.show()
         case 2:
             sheetview = alertsheet(title: "状态", canclebtntitle: "完成", buttontitles: ["未开始","进行中","已完成"], buttonimages: ["sns_icon_1","sns_icon_22","sns_icon_24"])
             sheetview?.show()

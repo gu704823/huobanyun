@@ -32,12 +32,30 @@ class listCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         refershdata()
         
-        let date = Date()
-      // addandquery.addtarget(classname: "addtask", person: ["swift","jason"], taskdescription: "壮志", taskname: "又有一台打印机坏了", finshtime: date, priority: priority.中.rawValue, state: state.未开始.rawValue)
-      let userdefaults = UserDefaults.standard
-     let name = userdefaults.object(forKey: "name")
-//        print(name)
-        addandquery.addtarget(classname: "addtask", person: ["swift","jason"], taskdescription: "壮志", taskname: "又有一台打印机坏了", finshtime: date, priority: priority.中.rawValue, state: state.未开始.rawValue, creatpeople: name as! String)
+//        let date = Date()
+//        let userdefaults = UserDefaults.standard
+//        let name = userdefaults.object(forKey: "name")!
+        
+      //  addandquery.addtarget(classname: "addtarget", person: ["swift","jaso"], taskdescription: "打印机坏了", taskname: "壮志", finshtime: date, priority: "高", state: "已完成", creatpeople: name as! String)
+        
+        //query.onsearch(name: "addtarget", classname: "壮志")
+        let query = LCQuery(className: "zhihang")
+        query.find { (result) in
+            switch result {
+            case .success(objects: let objects):
+                for object in objects{
+                    print(object["area"]?.stringValue)
+                }
+            case .failure(error: let error):
+                print(error)
+            }
+        }
+        
+        
+        
+        
+        
+       
         
         
         
@@ -127,6 +145,8 @@ extension listCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "listcollectcell", for: indexPath) as! listCollectionViewCell
         cell.name.text = zhihang[indexPath.row]["name"]?.stringValue
+        cell.badgeCenterOffset = CGPoint(x: -15, y: 10)
+        cell.showBadge(with: .number, value: 2, animationType: .shake)
         return cell
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

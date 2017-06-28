@@ -21,6 +21,7 @@
 		BB4B3A6B1EF62F5A00D828FD /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B3A6A1EF62F5A00D828FD /* extension.swift */; };
 		BB4B3A6E1EF6327400D828FD /* completion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B3A6D1EF6327400D828FD /* completion.storyboard */; };
 		BB4B3A701EF63EA300D828FD /* add.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B3A6F1EF63EA300D828FD /* add.swift */; };
+		BB4CCF4A1F0380380097D81D /* pickerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4CCF491F0380380097D81D /* pickerview.swift */; };
 		BB4FAA3B1F024C4200C240FC /* giftview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FAA3A1F024C4200C240FC /* giftview.swift */; };
 		BB4FAA3E1F0250E600C240FC /* timg.gif in Resources */ = {isa = PBXBuildFile; fileRef = BB4FAA3D1F0250E600C240FC /* timg.gif */; };
 		BB4FAA421F0252A100C240FC /* timg1.gif in Resources */ = {isa = PBXBuildFile; fileRef = BB4FAA411F0252A100C240FC /* timg1.gif */; };
@@ -100,6 +101,8 @@
 		BB4B3A6F1EF63EA300D828FD /* add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = add.swift; sourceTree = "<group>"; };
 		BB4B3A711EF64B5500D828FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BB4B3A721EF64B5600D828FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BB4CCF461F0337840097D81D /* huobanyun-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "huobanyun-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB4CCF491F0380380097D81D /* pickerview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pickerview.swift; sourceTree = "<group>"; };
 		BB4FAA3A1F024C4200C240FC /* giftview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = giftview.swift; sourceTree = "<group>"; };
 		BB4FAA3D1F0250E600C240FC /* timg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = timg.gif; sourceTree = "<group>"; };
 		BB4FAA411F0252A100C240FC /* timg1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = timg1.gif; sourceTree = "<group>"; };
@@ -298,6 +301,7 @@
 				BB8540071EEFEC7500E71C7E /* Assets.xcassets */,
 				BB8540091EEFEC7500E71C7E /* LaunchScreen.storyboard */,
 				BB85400C1EEFEC7500E71C7E /* Info.plist */,
+				BB4CCF461F0337840097D81D /* huobanyun-Bridging-Header.h */,
 			);
 			path = huobanyun;
 			sourceTree = "<group>";
@@ -361,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				BB8FE4571EFA0DD500850510 /* alertview.swift */,
+				BB4CCF491F0380380097D81D /* pickerview.swift */,
 				BB8FE4581EFA0DD500850510 /* alertsheet.swift */,
 				BB8FE45D1EFA3B8900850510 /* finshtime.swift */,
 				BB4FAA3A1F024C4200C240FC /* giftview.swift */,
@@ -449,6 +454,7 @@
 					BB853FFC1EEFEC7500E71C7E = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = U955FM7S6Y;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					BB8540101EEFEC7600E71C7E = {
@@ -592,6 +598,7 @@
 				437B5F931EFDE11B005158D5 /* taskdescriptionViewController.swift in Sources */,
 				BB8FE4411EFA0DCA00850510 /* DesignableTabBarController.swift in Sources */,
 				BB8FE43C1EFA0DCA00850510 /* AutoTextView.swift in Sources */,
+				BB4CCF4A1F0380380097D81D /* pickerview.swift in Sources */,
 				BB8FE4561EFA0DCA00850510 /* UnwindSegue.swift in Sources */,
 				BB8FE4531EFA0DCA00850510 /* SpringView.swift in Sources */,
 				BB8FE4501EFA0DCA00850510 /* SpringLabel.swift in Sources */,
@@ -770,11 +777,14 @@
 			baseConfigurationReference = 852F2BCDE980DD3024850FEB /* Pods-huobanyun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = U955FM7S6Y;
 				INFOPLIST_FILE = huobanyun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift.huobanyun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "huobanyun/huobanyun-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -784,11 +794,13 @@
 			baseConfigurationReference = 3FA3BCA1FDE5889ACE6CADC1 /* Pods-huobanyun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = U955FM7S6Y;
 				INFOPLIST_FILE = huobanyun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = swift.huobanyun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "huobanyun/huobanyun-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Juh-gF-8xB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Juh-gF-8xB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,20 +47,22 @@
                                                         <constraint firstAttribute="width" constant="78" id="hjt-NC-fcd"/>
                                                     </constraints>
                                                 </stackView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入任务名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="my6-m1-vFM">
-                                                    <rect key="frame" x="13" y="38.5" width="359" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海安" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpA-cR-l3D">
+                                                    <rect key="frame" x="13" y="47" width="354" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="GJp-qv-PMs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Jne-o5-LWt" firstAttribute="leading" secondItem="bl5-Og-Azi" secondAttribute="leadingMargin" constant="5" id="AiS-6F-Sly"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="my6-m1-vFM" secondAttribute="bottom" constant="5" id="MhK-Ei-LRl"/>
-                                                <constraint firstItem="my6-m1-vFM" firstAttribute="leading" secondItem="bl5-Og-Azi" secondAttribute="leadingMargin" constant="5" id="N66-xL-cKm"/>
-                                                <constraint firstItem="my6-m1-vFM" firstAttribute="top" secondItem="Jne-o5-LWt" secondAttribute="bottom" constant="5" id="N7r-oy-jk7"/>
-                                                <constraint firstItem="my6-m1-vFM" firstAttribute="trailing" secondItem="bl5-Og-Azi" secondAttribute="trailingMargin" constant="5" id="QRd-8Q-7Bm"/>
+                                                <constraint firstItem="hpA-cR-l3D" firstAttribute="leading" secondItem="bl5-Og-Azi" secondAttribute="leadingMargin" constant="5" id="KRz-u3-XGS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hpA-cR-l3D" secondAttribute="bottom" constant="4" id="W1g-mG-HBH"/>
                                                 <constraint firstItem="Jne-o5-LWt" firstAttribute="top" secondItem="bl5-Og-Azi" secondAttribute="topMargin" constant="5" id="eyY-ca-3Fr"/>
+                                                <constraint firstItem="hpA-cR-l3D" firstAttribute="trailing" secondItem="bl5-Og-Azi" secondAttribute="trailingMargin" id="uWk-Bj-FBA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -308,12 +310,11 @@
                         <outlet property="priority" destination="23O-KQ-HWn" id="axF-px-cIZ"/>
                         <outlet property="statelabel" destination="MaI-zb-lY6" id="zED-tp-SBE"/>
                         <outlet property="taskdescriptionname" destination="c0N-eB-RpZ" id="gtQ-T7-Ebg"/>
-                        <outlet property="taskname" destination="my6-m1-vFM" id="sfV-Zd-K3f"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zp2-qj-U9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="-146"/>
+            <point key="canvasLocation" x="208.80000000000001" y="-146.17691154422789"/>
         </scene>
         <!--Taskdescription View Controller-->
         <scene sceneID="R48-bF-DA8">

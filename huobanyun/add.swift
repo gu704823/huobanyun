@@ -23,16 +23,26 @@ struct addandquery {
     static func addtarget(classname:String,person:[String],taskdescription:String,taskname:String,finshtime:Date,priority:String,state:String,creatpeople:String){
         let lcdate = LCDate(finshtime)
         let todo = LCObject(className: classname)
-        todo.set("person", value: person)
         todo.set("taskdescription", value:taskdescription )
         todo.set("priority", value: priority)
         todo.set("state", value: state)
         todo.set("taskname", value: taskname)
         todo.set("finshtime", value: lcdate)
         todo.set("user", value: creatpeople)
-        //  todo.set("zhihang", value: <#T##LCValueConvertible?#>)
+        //人(关联)
+        //支行(关联)
+        
+        
         todo.save()
     }
+    
+   
+    
+    
+    
+    
+    
+    
     //查询任务
     static func querytask(classname:String){
         let query = LCQuery(className: classname)
