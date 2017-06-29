@@ -35,14 +35,6 @@ struct addandquery {
         
         todo.save()
     }
-    
-   
-    
-    
-    
-    
-    
-    
     //查询任务
     static func querytask(classname:String){
         let query = LCQuery(className: classname)
@@ -55,4 +47,82 @@ struct addandquery {
             }
         }
     }
+   //区域与支行
+    static func creatarea(areaname:String,zhihangname:String){
+        let area = LCObject(className: "area")
+        area.set("name", value: areaname)
+        
+        let renmminlu = LCObject(className: "zhihang")
+        renmminlu.set("name", value: zhihangname)
+        
+        renmminlu.set("dependent", value: area)
+        
+        renmminlu.save()
+        
+        
+    }
+    //查找所有的区域
+    static func queryarea(completion:@escaping (_ areaname:[String])->()){
+        let query = LCQuery(className: "area")
+        query.find { (results) in
+            switch results{
+            case .failure(error: _):return
+            case .success(objects: let objects):
+                let areas = objects.map{
+                    return $0["name"]?.stringValue
+                }
+                completion(areas as! [String])
+            }
+        }
+    }
+    //根据指定的区域查找id
+    static func queryid(name:String,completion:@escaping (_ areaname:String)->()){
+        let query = LCQuery(className: "area")
+        query.whereKey("name", .equalTo(name))
+        query.find { (results) in
+            switch results{
+            case .failure(error: _):return
+            case .success(objects: let objects):
+                for object in objects{
+                    completion(object["objectId"]?.stringValue ?? "2")
+                }
+            }
+        }
+        
+    }
+    //根据指定的区域id添加支行
+    static func addzhihang(name:String){
+        queryid(name: name) { (id) in
+            let area = LCObject(className: "area", objectId: id)
+            let haipeng = LCObject(className: "zhihang")
+            haipeng.set("name", value: "海鹏")
+            haipeng.set("dependent", value: area)
+            haipeng.save()
+        }
+    }
+    //根据指定的区域id查找支行
+    static func queryzhihang(name:String,completion:@escaping (_ zhihang:[String])->()){
+     queryid(name: name) { (id) in
+        let query = LCQuery(className: "zhihang")
+        let area = LCObject(className: "area", objectId: id)
+        query.whereKey("dependent", .equalTo(area))
+        query.find({ (result) in
+            switch result{
+            case .failure(error: _):return
+            case .success(objects: let objects):
+                let zhihzang = objects.map{
+                    return $0["name"]?.stringValue
+                }
+            completion(zhihzang as! [String])
+            }
+        })
+        }
+        
+        
+    }
+  
+    
+    
+    
+    
 }

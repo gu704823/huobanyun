@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zwU-7K-cmH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="O5Z-Ax-rSh">
+            <objects>
+                <viewController id="zwU-7K-cmH" customClass="testViewController" customModule="huobanyun" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4MS-yc-OAc"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCS-WZ-iug"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d5h-pa-5la">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7E-xM-O9I">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="zFS-K3-Qi9"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPz-SM-W8d">
+                                <rect key="frame" x="0.0" y="345" width="375" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="c9K-xc-CNq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YPz-SM-W8d" secondAttribute="trailing" id="NMC-59-hTZ"/>
+                            <constraint firstItem="hCS-WZ-iug" firstAttribute="top" secondItem="K7E-xM-O9I" secondAttribute="bottom" id="Xqd-yT-mal"/>
+                            <constraint firstItem="K7E-xM-O9I" firstAttribute="leading" secondItem="d5h-pa-5la" secondAttribute="leading" id="YxX-A4-Lip"/>
+                            <constraint firstItem="K7E-xM-O9I" firstAttribute="top" secondItem="YPz-SM-W8d" secondAttribute="bottom" constant="37" id="mBz-Hb-aMz"/>
+                            <constraint firstItem="YPz-SM-W8d" firstAttribute="leading" secondItem="d5h-pa-5la" secondAttribute="leading" id="v1M-cn-JpV"/>
+                            <constraint firstAttribute="trailing" secondItem="K7E-xM-O9I" secondAttribute="trailing" id="vu0-e3-FZR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerview" destination="K7E-xM-O9I" id="Xgk-yA-SOz"/>
+                        <outlet property="showlabel" destination="YPz-SM-W8d" id="vLG-l2-laa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBl-qa-6vS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="-103.89805097451276"/>
+        </scene>
+    </scenes>
+</document>

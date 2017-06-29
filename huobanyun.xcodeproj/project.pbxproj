@@ -25,6 +25,8 @@
 		BB4FAA3B1F024C4200C240FC /* giftview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4FAA3A1F024C4200C240FC /* giftview.swift */; };
 		BB4FAA3E1F0250E600C240FC /* timg.gif in Resources */ = {isa = PBXBuildFile; fileRef = BB4FAA3D1F0250E600C240FC /* timg.gif */; };
 		BB4FAA421F0252A100C240FC /* timg1.gif in Resources */ = {isa = PBXBuildFile; fileRef = BB4FAA411F0252A100C240FC /* timg1.gif */; };
+		BB541FC11F04E85B0027C70E /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB541FC01F04E85B0027C70E /* testViewController.swift */; };
+		BB541FC31F04E86E0027C70E /* testStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB541FC21F04E86E0027C70E /* testStoryboard.storyboard */; };
 		BB8540011EEFEC7500E71C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8540001EEFEC7500E71C7E /* AppDelegate.swift */; };
 		BB8540061EEFEC7500E71C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8540041EEFEC7500E71C7E /* Main.storyboard */; };
 		BB8540081EEFEC7500E71C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8540071EEFEC7500E71C7E /* Assets.xcassets */; };
@@ -106,6 +108,8 @@
 		BB4FAA3A1F024C4200C240FC /* giftview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = giftview.swift; sourceTree = "<group>"; };
 		BB4FAA3D1F0250E600C240FC /* timg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = timg.gif; sourceTree = "<group>"; };
 		BB4FAA411F0252A100C240FC /* timg1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = timg1.gif; sourceTree = "<group>"; };
+		BB541FC01F04E85B0027C70E /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		BB541FC21F04E86E0027C70E /* testStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = testStoryboard.storyboard; sourceTree = "<group>"; };
 		BB853FFD1EEFEC7500E71C7E /* huobanyun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huobanyun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8540001EEFEC7500E71C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB8540051EEFEC7500E71C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 				BB8540091EEFEC7500E71C7E /* LaunchScreen.storyboard */,
 				BB85400C1EEFEC7500E71C7E /* Info.plist */,
 				BB4CCF461F0337840097D81D /* huobanyun-Bridging-Header.h */,
+				BB541FC01F04E85B0027C70E /* testViewController.swift */,
+				BB541FC21F04E86E0027C70E /* testStoryboard.storyboard */,
 			);
 			path = huobanyun;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 				BB4B3A6E1EF6327400D828FD /* completion.storyboard in Resources */,
 				BB8FE4491EFA0DCA00850510 /* LoadingView.xib in Resources */,
 				BB8FE4461EFA0DCA00850510 /* Info.plist in Resources */,
+				BB541FC31F04E86E0027C70E /* testStoryboard.storyboard in Resources */,
 				BB4FAA3E1F0250E600C240FC /* timg.gif in Resources */,
 				BB8540061EEFEC7500E71C7E /* Main.storyboard in Resources */,
 				4319D66E1F00676000B96D2E /* loginanderegisiter.storyboard in Resources */,
@@ -594,6 +601,7 @@
 				BB8FE4441EFA0DCA00850510 /* DesignableView.swift in Sources */,
 				4319D66B1F00674800B96D2E /* userredisiterViewController.swift in Sources */,
 				BB8FE44A1EFA0DCA00850510 /* Misc.swift in Sources */,
+				BB541FC11F04E85B0027C70E /* testViewController.swift in Sources */,
 				BB8FE43B1EFA0DCA00850510 /* AsyncImageView.swift in Sources */,
 				437B5F931EFDE11B005158D5 /* taskdescriptionViewController.swift in Sources */,
 				BB8FE4411EFA0DCA00850510 /* DesignableTabBarController.swift in Sources */,

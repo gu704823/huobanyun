@@ -39,20 +39,10 @@ class listCollectionViewController: UICollectionViewController {
       //  addandquery.addtarget(classname: "addtarget", person: ["swift","jaso"], taskdescription: "打印机坏了", taskname: "壮志", finshtime: date, priority: "高", state: "已完成", creatpeople: name as! String)
         
         //query.onsearch(name: "addtarget", classname: "壮志")
-        let query = LCQuery(className: "zhihang")
-        query.find { (result) in
-            switch result {
-            case .success(objects: let objects):
-                for object in objects{
-                    print(object["area"]?.stringValue)
-                }
-            case .failure(error: let error):
-                print(error)
-            }
-        }
         
         
-        
+       // addandquery.creatarea()
+      //  addandquery.queryzhihang()
         
         
        
